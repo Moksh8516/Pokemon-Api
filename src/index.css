@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  .card-wrapper::before {
+    content: " ";
+    background: conic-gradient(#2dd4bf 0deg,
+        #10b981 0deg,
+        transparent 80deg);
+    @apply absolute h-[160%] w-[160%] left-[-25%] top-[-25%] animate-[spin_3s_linear_infinite]
+  }
+}
