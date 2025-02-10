@@ -36,7 +36,6 @@ function Pokemon({ search }) {
   let pokeDesk = pokemon.filter((curPokemon) => {
     return curPokemon.name.toLowerCase().includes(search.toLowerCase());
   });
-  console.log(pokeDesk);
 
   return (
     <>
